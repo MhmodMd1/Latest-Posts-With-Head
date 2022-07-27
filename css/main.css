@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #0E0E0E;
+}
+
+.parent {
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    margin: 60px auto;
+}
+
+.parent .container {
+    width: 73%;
+    margin: auto;
+}
+
+.parent .top {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.parent .top .line{
+    width: 80%;
+    height: 5px;
+    background-color: #DFDFDF;
+    position: absolute;
+    left: 270px;
+}
+.parent .top .shadow {
+    background-color: #FFAB91;
+    height: 59px;
+    width: 185px;
+    position: absolute;
+    
+    left: 0px;
+}
+.parent .top .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+.parent .top .container .start p {
+    background-color: #FF5722;
+    padding: 20px 15px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.parent .top .container .end {
+    display: flex;
+    align-items: center;
+}
+.parent .top .container .end .sign {
+    background-color: #FF5722;
+    padding: 16px;
+    font-size: 12px;
+}
+.parent .top .container .end p {
+    background-color: #DFDFDF;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.parent .bottom {
+    height: 80%;
+}
+.parent .bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.parent .bottom .container .box {
+    width: 100%;
+    background-color: #EEEEEE;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.parent .bottom .container .box .date {
+    width: calc(5%);
+    height: calc(100%) ;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.parent .bottom .container .box .image {
+    width: 10%;
+    height: 100%;
+    background-image: url(../image/boyandgir.jpg);
+    background-size: cover;
+}
+.parent .bottom .container .box-two .image {
+    background-image: url(../image/baby-cooking.jpg);
+}
+.parent .bottom .container .box-three .image {
+    background-image: url(../image/piano.jpg);
+}
+.parent .bottom .container .box .content {
+    width: calc(70% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 20px ;
+}
+.parent .bottom .container .box .content > p {
+    margin-top: 10px;
+}
+.parent .bottom .container .box .content .icons ul {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+.parent .bottom .container .box .content .icons ul li {
+    display: flex;
+    color: #959798;
+    font-size: 12px;
+}
+.parent .bottom .container .box .content .icons ul li:not(:first-child) {
+    margin-left: 15px;
+}
+.parent .bottom .container .box .content .icons ul li p {
+    margin-left: 5px;
+}
